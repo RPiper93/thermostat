@@ -62,17 +62,17 @@ describe('Thermostat', function() {
     for(var i=0; i<3; i++) {
       thermostat.downButton();
     };
-    expect(thermostat.displayTemp()).toEqual('GREEN');
+    expect(thermostat.displayTemp()).toEqual('green');
   });
 
   it('colours display yellow when between 18 and 25 degrees', function() {
-    expect(thermostat.displayTemp()).toEqual('YELLOW');
+    expect(thermostat.displayTemp()).toEqual('yellow');
   });
 
   it('colours display red when above 25 degrees', function() {
     for(var i=0; i<5; i++) {
       thermostat.upButton();
     };
-    expect(thermostat.displayTemp()).toEqual('RED');
+    expect(thermostat.displayTemp()).toEqual('red');
   });
 });

@@ -1,11 +1,45 @@
-#GREEN {
-  color: green;
+* {
+  font-family: 'Fjalla One', sans-serif;
 }
 
-#YELLOW {
-  color: yellow;
+.centre_page {
+  height: 300px;
+  left: auto;
 }
 
-#RED {
-  color: red;
+h1 {
+  text-align: center;
+  font-size: 5em;
+  height: 1.05em;
+  margin: 0px;
+}
+
+p {
+  position: relative;
+  margin: 0px;
+  left: 40%;
+  width: 300px;
+  height: 75px;
+}
+
+.temperature-upButton, .temperature-downButton {
+  border: none;
+  font-size: 2em;
+  color: white;
+  height: 1em;
+  padding-top:1px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+.temperature-resetTemp {
+  margin-top: 15px;
+  margin-left: -19px;
+  border: none;
+  font-size: 1.50em;
+  color: white;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
 }

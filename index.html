@@ -3,31 +3,36 @@
 <head>
   <title>Thermostat</title>
   <link href="styles.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Fjalla+One' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
 
   <section>
-    <h1>Local Temperature: <span class="local-temperature"></span></h1>
+    <h3>Local Temperature: <span class="local-temperature"></span></h3>
     <select class="local-city">
       <option value="London">London</option>
       <option value="Newcastle upon Tyne">Newcastle upon Tyne</option>
       <option value="Colchester,GB">Colchester</option>
       <option value="Edinburgh">Edinburgh</option>
-
+      <option value="Whitley Bay">Whitley Bay</option>
     </select>
+    <div class = "centre_page">
     <h1 class="temperature"></h1>
     <p>
       <button class="temperature-upButton">+</button>
       <button class="temperature-downButton">-</button>
-      <button class="temperature-resetTemp">Reset</button>
-      Power saving mode is <span class="power-saving-status">on</span>
-      <button class="power-saving-mode">Power Saving</button>
+      <button class="temperature-resetTemp">reset</button>
     </p>
-  </section>
-  <script src="src/Thermostat.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="interface.js"></script>
+  </div>
+  <p class="power-saving">
+    Power saving mode is <span class="power-saving-status">on</span>
+    <button class="power-saving-mode">Power Saving</button>
+  </p>
+</section>
+<script src="src/Thermostat.js"></script>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="interface.js"></script>
 
 </body>
 </html>

@@ -37,12 +37,12 @@ $(document).ready(function() {
     var token = '&appid=f83f44a7a0afa1876ffd608629d71ef1';
     var units = '&units=metric';
     $.get(url + token + units, function(data){
-      $('.local-temperature').text(data.main.temp + " degrees");
+      $('.local-temperature').text(data.main.temp + " DEGREES");
     });
   };
 
   function updateTemperature(){
-    $('.temperature').text(thermostat.currentTemp() + " degrees");
-    $('.temperature').attr('id', thermostat.displayTemp());
+    $('.temperature').text(thermostat.currentTemp() + " DEGREES");
+    $('*').css("background-color", thermostat.displayTemp());
   };
 });

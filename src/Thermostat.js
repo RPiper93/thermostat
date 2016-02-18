@@ -15,12 +15,12 @@ Thermostat.prototype.currentTemp = function() {
 
 Thermostat.prototype.displayTemp = function() {
   if(this.temperature < this.MEDIUM_TEMP){
-    return "GREEN";
+    return "#63E57A";
   }
   else if(this.temperature < this.MAX_TEMP_PSM_ON) {
-    return "YELLOW";
+    return "#E0C344";
   };
-  return "RED";
+  return "#E0694D";
 };
 
 Thermostat.prototype.upButton = function() {
