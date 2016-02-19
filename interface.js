@@ -28,7 +28,7 @@ $(document).ready(function() {
   });
 
   $('#local-city').change(function(){
-    var city = $('.local-city').val();
+    var city = $('#local-city').val();
     displayWeather(city);
   });
 
@@ -37,7 +37,8 @@ $(document).ready(function() {
     var token = '&appid=f83f44a7a0afa1876ffd608629d71ef1';
     var units = '&units=metric';
     $.get(url + token + units, function(data){
-      $('#local-temperature').text("outside " + data.main.temp + " degrees");
+      var temp = data.main.temp
+      $('#local-temperature').text("outside " + (Math.round(temp*10)/10) + " degrees");
     });
   };
 
