@@ -8,28 +8,32 @@
 
 <body>
 
-  <section>
-    <h3>Local Temperature: <span class="local-temperature"></span></h3>
-    <select class="local-city">
+  <aside>
+    <select id="local-city">
       <option value="London">London</option>
       <option value="Newcastle upon Tyne">Newcastle upon Tyne</option>
       <option value="Colchester,GB">Colchester</option>
       <option value="Edinburgh">Edinburgh</option>
       <option value="Whitley Bay">Whitley Bay</option>
     </select>
-    <div class = "centre_page">
-    <h1 class="temperature"></h1>
-    <p>
-      <button class="temperature-upButton">+</button>
-      <button class="temperature-downButton">-</button>
-      <button class="temperature-resetTemp">reset</button>
-    </p>
-  </div>
+  </aside>
+    <main>
+    <div class="outside-temp">
+      <p><span id="local-temperature"></span></p>
+    </div>
+    <h1 id="temperature"></h1>
+    <div class="temp-buttons">
+      <p>
+      <button id="temperature-upButton">+</button>
+      <button id="temperature-downButton">-</button>
+      <button id="temperature-resetTemp">reset</button>
+      </p>
+    </div>
+  </main>
   <p class="power-saving">
-    Power saving mode is <span class="power-saving-status">on</span>
-    <button class="power-saving-mode">Power Saving</button>
+    Power Saving Mode: <span id="power-saving-status">On</span></br>
+    <button id="power-saving-mode"><img src="IEC5009_Standby_Symbol-fs8.png"></button>
   </p>
-</section>
 <script src="src/Thermostat.js"></script>
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="interface.js"></script>

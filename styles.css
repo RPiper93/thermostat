@@ -2,7 +2,15 @@
   font-family: 'Fjalla One', sans-serif;
 }
 
-.centre_page {
+body {
+  max-width: 60%;
+  max-height: 50%x;
+  min-height: 595px;
+  min-width: 456px;
+  margin: auto;
+}
+
+main {
   height: 300px;
   left: auto;
 }
@@ -12,17 +20,46 @@ h1 {
   font-size: 5em;
   height: 1.05em;
   margin: 0px;
+  z-index: 10;
 }
 
-p {
+.temp-buttons p {
   position: relative;
+  top: 1px;
   margin: 0px;
-  left: 40%;
+  left: 30%;
   width: 300px;
   height: 75px;
 }
 
-.temperature-upButton, .temperature-downButton {
+main button {
+  right: 15%;
+}
+
+.outside-temp {
+  position: relative;
+  left: 9%;
+  width: 300px;
+  height: 75px;
+  margin-bottom: 25px;
+}
+
+.outside-temp p {
+  position: relative;
+  top: 6px;
+  left: 90%;
+  width: 90px;
+  border: none;
+  font-size: 1.50em;
+  color: white;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+}
+
+#temperature-upButton, #temperature-downButton {
+  position: relative;
+  top: -5px;
   border: none;
   font-size: 2em;
   color: white;
@@ -33,7 +70,9 @@ p {
   -ms-transform: rotate(180deg);
 }
 
-.temperature-resetTemp {
+#temperature-resetTemp {
+  position: relative;
+  top: 6px;
   margin-top: 15px;
   margin-left: -19px;
   border: none;
@@ -42,4 +81,24 @@ p {
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
+}
+
+#power-saving-mode {
+  position: relative;
+  top: 2px;
+  border: none;
+}
+
+#power-saving-mode img {
+  width: 20px;
+}
+
+.power-saving {
+  right: 3%;
+  bottom: 2%;
+  text-align: right;
+}
+
+.power-saving button {
+  right: -7px;
 }
